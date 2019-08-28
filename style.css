@@ -120,7 +120,10 @@ body{
         height: 720px;
     }
     .name{
-      font-size: 40px;
+      font-size: 36px;
+    }
+    .profile-image{
+      margin-left: 40px;
     }
   }
 
@@ -187,8 +190,9 @@ body{
   padding-top:25px;
   background: #e8feee;
 }
-#technology h3{
-  font-size: 30px;
+#technology span{
+  font-size: 32px;
+  font-weight: bold;
 }
 #technology p{
   font-size: 18px;
@@ -248,8 +252,9 @@ body{
   padding-top: 20px;
   background: #e8feee;
 }
-.project-heading h3{
+.project-heading span{
   font-size: 32px;
+  font-weight: bold;
 }
 .project-heading p{
   font-size: 18px;
@@ -289,8 +294,9 @@ body{
 #contact{
   height: 660px;
 }
-#contact h3{
-  font-size: 30px;
+#contact span{
+  font-size: 32px;
+  font-weight: bold;
 }
 #contact p{
   font-size: 18px;
@@ -308,6 +314,9 @@ body{
   }
   #project{
     height: 780px;
+  }
+  .project-detail p{
+    padding: 20px;
   }
 }
 /* Style inputs */
