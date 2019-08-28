@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .navbar{
+    position: fixed;
+    height: 60px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .logo{
+    background: url(./images/logo.jpg) no-repeat 50% 50%;
+    background-size: contain;
+    width: 140px;
+    height: 40px;
+    float: left;
+  }
+  .menu{
+    position: absolute;
+    right: 20px;
+  }
+  .menu a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .menu a:hover{
+      background-color: black;
+      color: white;
+      border-radius: 4px;
+  }
+  .btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+  }
+  /* .btn:hover > span{
+    background-color: ;
+  } */
+  .btn span{
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #000;
+  }
+
+  @media only screen and (max-width : 600px) {
+    .navbar{
+      overflow: visible;
+    }
+    .menu{
+      width: 100%;
+      right: 0;
+      top: 60px;
+      background: #ffffff;
+      overflow: hidden;
+      max-height: 0;
+    }
+    .menu a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .btn{
+      display: block;
+      cursor: pointer;
+    }
+    .show{
+      max-height: 500px;
+    }
+}
+/* for home page */
+#home{
+    height: 620px;
+    width: 100%;
+    background: #f1f1f1;
+}
+.home-detail {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    /* transform: translate(-25%, -20%); */
+}
+.home-detail h4{
+  color: #000;
+}
+.name{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* for about page */
+#about{
+    height: 560px;
+    background-color: #eafafd;
+}
+.profile-image{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 120px;
+    margin-left: 60px;
+    float: left;
+    margin-right: 40px; 
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    #about {
+        height: 720px;
+    }
+    .name{
+      font-size: 40px;
+    }
+  }
+
+.about-flex {
+    padding-left: 160px;
+    padding-top: 200px;
+    font-size: 18px;
+}
+.about-flex span{
+    font-size: 25px;
+    font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+    .about-flex{
+        padding-left: 40px;
+        padding-top: 480px;
+    }
+}
+.grid-container {
+    display: inline-grid;
+    grid-gap: 40px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: #f1f1f1;
+    padding: 60px 140px;
+    /* align-content: space-between; */
+    align-items: center;
+    width: 100%;
+}
+.grid-item {
+    /* margin: 50px; */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 80px;
+    font-size: 24px;
+    text-align: center;
+    transition: transform .3s;
+}
+.grid-item img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: 0 auto;
+}
+.grid-item:hover{
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 700px) {
+    .grid-container{
+        grid-template-columns: 400px;
+        grid-gap: 0;
+        padding: 0 0;
+    }
+    .grid-item{
+        margin: 50px;
+    }
+    .grid-item:hover{
+        transform: scale(1);
+    }
+  }
+
+.technology-heading{
+  text-align:center;
+  height:180px;
+  padding-top:25px;
+  background: #e8feee;
+}
+#technology h3{
+  font-size: 30px;
+}
+#technology p{
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 200px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about-detail{
+  height: 400px;
+}
+.about-detail p{
+  font-size: 18px;
+}
+.about-detail span{
+  font-weight: bold;
+  font-size: 22px;
+}
+.experience{
+  padding-left: 60px;
+  font-size: 24px;
+}
+.education{
+  padding-left: 60px;
+  font-size: 24px;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .about-detail{
+    height: 600px;
+  }
+}
+#project{
+  height: 600px;
+}
+.project-heading{
+  text-align:center;
+  height:180px;
+  padding-top: 20px;
+  background: #e8feee;
+}
+.project-heading h3{
+  font-size: 32px;
+}
+.project-heading p{
+  font-size: 18px;
+}
+.project-detail{
+  padding: 20px 40px;
+}
+.project-detail h3{
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+}
+.project-detail p span{
+  font-weight: bold;
+  font-size: 20px;
+}
+.project-detail p{
+  padding: 40px;
+  font-size: 16px;
+}
+.project-detail img{
+  margin-right: 40px;
+  float: left;
+  clear: both;
+}
+.project-detail p a span{
+  border: 1px solid white;
+  padding: 2px;
+  color: #fff;
+  background: #4b5a91;
+}
+.project-detail p a span:hover{
+  color: #000;
+}
+
+/* Contact related style */
+#contact{
+  height: 660px;
+}
+#contact h3{
+  font-size: 30px;
+}
+#contact p{
+  font-size: 18px;
+}
+.contact-heading{
+  text-align:center;
+  height:180px;
+  padding-top: 20px;
+  background: #e8feee;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #contact{
+    height: 840px;
+  }
+  #project{
+    height: 780px;
+  }
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.geoloaction-style{
+  width: 60%;
+  height: 100%;
+  /* margin-top: 10%; */
+  padding-left: 60px;
+}
+.address-style{
+  padding-left: 60px;
+}
+.footer-style { 
+  height: 100px;
+  background-color: black;
+  padding-top: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  clear: both;
+}
+.footer-style span{
+  padding-left: 10px;
+}
+.fa:hover{
+  transform: scale(1.1);
+  opacity: 0.6;
+  /* color: blue; */
+}
