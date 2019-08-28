@@ -89,7 +89,7 @@ body{
 .home-detail {
     position: absolute;
     top: 32%;
-    left: 10%;
+    padding-left: 160px;
     /* transform: translate(-25%, -20%); */
 }
 .home-detail h4{
@@ -122,6 +122,9 @@ body{
     .name{
       font-size: 36px;
     }
+    .home-detail{
+      padding-left: 20px;
+    }
     .profile-image{
       margin-left: 40px;
     }
@@ -138,7 +141,7 @@ body{
 }
 @media screen and (max-width: 700px) {
     .about-flex{
-        padding-left: 40px;
+        padding-left: 20px;
         padding-top: 480px;
     }
 }
@@ -240,7 +243,7 @@ body{
     width: 100%;
   }
   .about-detail{
-    height: 600px;
+    height: 640px;
   }
 }
 #project{
@@ -316,7 +319,7 @@ body{
     height: 780px;
   }
   .project-detail p{
-    padding: 20px;
+    padding: 10px;
   }
 }
 /* Style inputs */
