@@ -32,7 +32,7 @@
     <div id="home">
         <!-- <img src="./images/bg4.png" width="100%" height="100%" class="home-image"> -->
         <div class="home-detail">
-            <h4><strong class="name">KRISHNA KUMAR</strong><br>Software Engineer Bangalore</h4>
+            <p><strong class="name">KRISHNA KUMAR</strong><br>Software Engineer Bangalore</p>
         </div>
     </div>
     <div id="about">
@@ -174,7 +174,7 @@
         </div>
     </div>
     <div class="footer-style">
-        <span>© 2019 Created by Krishna</span>
+        <span>© 2019 Krishna</span>
         <a href="https://www.linkedin.com/in/krishnakumar4265" target="_blank" class="fa fa-linkedin"
             style="color: white;padding-left:40px;text-decoration: none"></a>
         <a href="https://twitter.com/Krishna04940926" target="_blank" class="fa fa-twitter"
@@ -197,6 +197,17 @@
             $('.menu').toggleClass("show");
             $(".navbar").css("background-color", "#ffffff");
         });
+        $(".btn").on("click", function () {
+            if($('#home').css('margin-top') == '160px'){
+               $('#home').css('margin-top', '');
+               $('.home-detail').css('top', '32%');
+          }else{
+              $('#home').css('margin-top', '160px');
+              $('.home-detail').css('top', '52%');
+          }
+ 
+        });
+        
     </script>
 </body>
 

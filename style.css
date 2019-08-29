@@ -92,9 +92,6 @@ body{
     padding-left: 160px;
     /* transform: translate(-25%, -20%); */
 }
-.home-detail h4{
-  color: #000;
-}
 .name{
     font-size: 48px;
     font-weight: bold;
@@ -176,11 +173,11 @@ body{
 @media only screen and (max-width: 700px) {
     .grid-container{
         grid-template-columns: 400px;
-        grid-gap: 0;
-        padding: 0 0;
+        grid-gap: 40px;
+        padding: 40px 0;
     }
     .grid-item{
-        margin: 50px;
+        margin: 0 60px;
     }
     .grid-item:hover{
         transform: scale(1);
@@ -244,6 +241,12 @@ body{
   }
   .about-detail{
     height: 640px;
+  }
+  .experience{
+    padding-left: 10px;
+  }
+  .education{
+    padding-left: 10px;
   }
 }
 #project{
@@ -316,7 +319,7 @@ body{
     height: 840px;
   }
   #project{
-    height: 780px;
+    height: 840px;
   }
   .project-detail p{
     padding: 10px;
@@ -351,6 +354,11 @@ input[type=submit]:hover {
 }
 .address-style{
   padding-left: 60px;
+}
+@media screen and (max-width: 600px) {
+  .address-style{
+    padding-left: 10px;
+  }
 }
 .footer-style { 
   height: 100px;
