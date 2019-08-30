@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     width: 100%;
-    
+    z-index: 1;
   }
   .logo{
     background: url(./images/logo.jpg) no-repeat 50% 50%;
