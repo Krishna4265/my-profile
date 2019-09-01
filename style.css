@@ -178,6 +178,7 @@ body{
     }
     .grid-item{
         margin: 0 60px;
+        margin-right: 80px;
     }
     .grid-item:hover{
         transform: scale(1);
@@ -298,7 +299,7 @@ body{
 
 /* Contact related style */
 #contact{
-  height: 660px;
+  height: 720px;
 }
 #contact span{
   font-size: 32px;
@@ -316,7 +317,7 @@ body{
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   #contact{
-    height: 840px;
+    height: 960px;
   }
   #project{
     height: 840px;
@@ -357,7 +358,7 @@ input[type=submit]:hover {
 }
 @media screen and (max-width: 600px) {
   .address-style{
-    padding-left: 10px;
+    padding: 10px;
   }
 }
 .footer-style { 

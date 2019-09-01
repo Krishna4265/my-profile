@@ -161,15 +161,17 @@
                 <!-- <img src="./images/geolocation.png" class="geoloaction-style"> -->
             </div>
             <div class="column">
-                <form action="http://formspree.io/kumar4265@gmail.com" method="POST">
-                    <label for="fname">Full Name</label>
-                    <input type="text" id="fname" name="fullname" placeholder="Your name..">
-                    <label for="lname">Email</label>
+                <form action="contactForm.php" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="email">Email</label>
                     <input type="text" id="email" name="email" placeholder="Your email..">
                     <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."
+                    <input type="text" id="subject" name="subject" placeholder="Your subject..">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something.."
                         style="height:170px"></textarea>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="submit">
                 </form>
             </div>
         </div>
