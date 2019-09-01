@@ -10,5 +10,6 @@ if(isset($_POST['submit'])){
     $headers = "From: ".$mailFrom;
 
     mail($mailTo, $subject, $message, $headers);
+    header('Location: index.html');
 }
 ?>
