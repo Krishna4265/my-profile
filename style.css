@@ -165,7 +165,7 @@ body{
     height: 50px;
     width: 50px;
     display: flex;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .grid-item:hover{
     transform: scale(1.1);
@@ -251,7 +251,7 @@ body{
   }
 }
 #project{
-  height: 600px;
+  height: 1200px;
 }
 .project-heading{
   text-align:center;
@@ -283,6 +283,8 @@ body{
   font-size: 16px;
 }
 .project-detail img{
+  height: 150px;
+  width: 200px;
   margin-right: 40px;
   float: left;
   clear: both;
@@ -320,10 +322,10 @@ body{
     height: 960px;
   }
   #project{
-    height: 840px;
+    height: 1960px;
   }
   .project-detail p{
-    padding: 10px;
+    padding: 5px;
   }
 }
 /* Style inputs */

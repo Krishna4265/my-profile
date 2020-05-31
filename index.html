@@ -33,7 +33,7 @@
     <div id="home">
         <!-- <img src="./images/bg4.png" width="100%" height="100%" class="home-image"> -->
         <div class="home-detail">
-            <p><strong class="name">KRISHNA KUMAR</strong><br>Software Engineer Bangalore</p>
+            <p><strong class="name">KRISHNA KUMAR</strong><br>Backend Developer, Bangalore</p>
         </div>
     </div>
     <div id="about">
@@ -41,8 +41,8 @@
             <img src="./images/image.jpeg" alt="profile" class="profile-image">
             <p class="about-flex"><span>About Me</span> <br><br>Hi Krishna here, I started working as a
                 software developer from 2018 and I love it. I am expert in Backend Development
-                using Python, Flask-RestAPI, Elasticsearch, PostgreSQL. I am also good in Responsive
-                website design and development using HTML5, CSS3, JS, Bootstrap.</p>
+                using Node.js, Express, Typescript, Python, Flask-RestAPI, Elasticsearch, PostgreSQL, MySQL.
+                I am also good in Responsive website design and development using HTML5, CSS3, JS, Bootstrap.</p>
         </div>
     </div>
     <div class="about-detail">
@@ -73,17 +73,29 @@
                         <br> June 2011 - March 2013
                         <br><br><span>School:</span>
                         <br>Saraswati Vidya Mandir
-                        <br>April 2011 - March 2010</p>
+                        <br>April 2010 - March 2011</p>
                 </div>
             </div>
         </div>
     </div>
     <div id="technology">
         <div class="technology-heading">
-            <p><span>Technology</span> 
+            <p><span>Technology</span>
                 <br><br>Applying technical knowledge to find answers and fix problems</p>
         </div>
         <div class="grid-container">
+            <div class="grid-item">
+                <img src="./images/nodejs-logo.png" alt="python logo">
+                Node.js
+            </div>
+            <div class="grid-item">
+                <img src="./images/typescript.png" alt="flask logo">
+                TypeScript
+            </div>
+            <div class="grid-item">
+                <img src="./images/REST.png" alt="rest logo">
+                Rest-API
+            </div>
             <div class="grid-item">
                 <img src="./images/python_logo.png" alt="python logo">
                 Python
@@ -93,8 +105,8 @@
                 Flask
             </div>
             <div class="grid-item">
-                <img src="./images/REST.png" alt="rest logo">
-                Rest-API
+                <img src="./images/mysql-logo.jpg" alt="rest logo">
+                MySQL
             </div>
             <div class="grid-item">
                 <img src="./images/postgresql.png" alt="postgres logo">
@@ -105,8 +117,8 @@
                 Elasticsearch
             </div>
             <div class="grid-item">
-                <img src="./images/java_logo.png" alt="java logo">
-                Java
+                <img src="./images/mongo-logo.png" alt="java logo">
+                MongoDB
             </div>
             <div class="grid-item">
                 <img src="./images/html_logo.png" alt="html logo">
@@ -138,9 +150,29 @@
                 in one click from different distributor, Bulk order process, Generate Report by
                 following simple step, Auto Split order according to the area, distributor, brand,
                 category etc.
-                <br><br>
-                <a href="https://testing.funnl.co.in/#/" target="_blank" style="text-decoration: none"><span>Click
-                        Here</span></a>
+            </p>
+        </div>
+        <div class="project-detail">
+            <h3><strong>Raycharge</strong></h3>
+            <img src="./images/b2b2.png">
+            <p><span>Description:</span>
+                <br>It is B2B Portal, it provides an online platform for buyers and sellers through
+                which they communicate as well as to conduct the operations of their business instantly.
+                Some of the key features are auto split order to sellers, Bulk order process, Generate
+                Report by following simple steps, and seller, brand, category, product, band crud.
+            </p>
+        </div>
+        <div class="project-detail">
+            <h3><strong>Onemoney( Finpro, Finshare & Account Aggregator )</strong></h3>
+            <img src="./images/onemoney.jpg" ,>
+            <p><span>Description:</span>
+                <br>Account aggregation or financial data aggregation is a technique that involves the
+                collection, assembly and synthesis of information from multiple accounts, such as loan/credit
+                accounts, savings and current accounts, credit cards and investment accounts: government accounts
+                such as public provident fund and income tax returns data; and supplementary business or consumer
+                accounts
+                such as those of e-commerce, food or mobility aggregators in a single place. The data collection,
+                collation and sharing are enabled through open application programming interface (API) connections.
             </p>
         </div>
     </div>
@@ -178,10 +210,11 @@
     </div>
     <div class="footer-style">
         <span>© 2019 Krishna</span>
-        <a href="https://www.linkedin.com/in/krishnakumar4265" target="_blank" class="fa fa-linkedin"
+        <a href="https://www.linkedin.com/in/krishnakumar096" target="_blank" class="fa fa-linkedin"
             style="color: white;padding-left:40px;text-decoration: none"></a>
         <a href="https://twitter.com/Krishna04940926" target="_blank" class="fa fa-twitter"
-            style="color: white;padding-left:10px;text-decoration: none"></a> </div>
+            style="color: white;padding-left:10px;text-decoration: none"></a>
+    </div>
     <script type="text/javascript">
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -201,16 +234,16 @@
             $(".navbar").css("background-color", "#ffffff");
         });
         $(".btn").on("click", function () {
-            if($('#home').css('margin-top') == '270px'){
-               $('#home').css('margin-top', '0');
-               $('.home-detail').css('top', '32%');
-          }else{
-              $('#home').css('margin-top', '270px');
-              $('.home-detail').css('top', '52%');
-          }
- 
+            if ($('#home').css('margin-top') == '270px') {
+                $('#home').css('margin-top', '0');
+                $('.home-detail').css('top', '32%');
+            } else {
+                $('#home').css('margin-top', '270px');
+                $('.home-detail').css('top', '52%');
+            }
+
         });
-        
+
     </script>
 </body>
 
